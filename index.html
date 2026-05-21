@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TKJ-Net | Internet Cepat & Stabil</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="navbar">
+    <div class="logo">
+        <div class="logo-icon">📶</div>
+        <div>
+            <h1>TKJ-Net</h1>
+            <p>Internet Cepat & Stabil</p>
+        </div>
+    </div>
+
+    <nav>
+        <ul>
+            <li><a href="#beranda">Beranda</a></li>
+            <li><a href="#paket">Paket</a></li>
+            <li><a href="#pesan">Pesan Sekarang</a></li>
+            <li><a href="#daftar">Daftar Pesanan</a></li>
+        </ul>
+    </nav>
+</header>
+
+
+<section class="hero" id="beranda">
+    <div class="hero-content">
+        <h2>Internet Cepat & Stabil untuk Kebutuhan Jaringan Anda</h2>
+        <p>
+            Nikmati koneksi internet tanpa gangguan
+            untuk rumah, sekolah, dan bisnis
+            bersama TKJ-Net.
+        </p>
+
+        <a href="#paket" class="btn-hero">
+            Lihat Paket
+        </a>
+
+        <div class="hero-stats">
+            <div class="stat-box">
+                <h3>19 juta+</h3>
+                <p>Pelanggan</p>
+            </div>
+
+            <div class="stat-box">
+                <h3>99,9%</h3>
+                <p>Pelanggan Puas</p>
+            </div>
+
+            <div class="stat-box">
+                <h3>Minjenet</h3>
+                <p>Customer Service</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="paket" id="paket">
+    <div class="section-title">
+        <h2>Paket Internet Kami</h2>
+        <p>Pilih paket terbaik sesuai kebutuhan Anda</p>
+    </div>
+
+    <div class="card-wrapper">
+
+        <div class="card">
+            <h3>Bronze</h3>
+            <div class="speed">10 Mbps</div>
+            <ul>
+                <li>Unlimited Kuota</li>
+                <li>Router Gratis</li>
+                <li>Support 24 Jam</li>
+            </ul>
+            <h4>Rp 135.000</h4>
+            <span>/bulan</span>
+        </div>
+
+        <div class="card active">
+            <div class="badge">Best Seller</div>
+            <h3>Silver</h3>
+            <div class="speed">50 Mbps</div>
+            <ul>
+                <li>Unlimited Kuota</li>
+                <li>Router Gratis</li>
+                <li>Prioritas Support</li>
+            </ul>
+            <h4>Rp 500.000</h4>
+            <span>/bulan</span>
+        </div>
+
+        <div class="card">
+            <h3>Gold</h3>
+            <div class="speed">100 Mbps</div>
+            <ul>
+                <li>Unlimited Kuota</li>
+                <li>Router Premium</li>
+                <li>VIP Support</li>
+            </ul>
+            <h4>Rp 995.000</h4>
+            <span>/bulan</span>
+        </div>
+
+    </div>
+</section>
+
+
+<section class="pesan-section" id="pesan">
+
+    <div class="form-container">
+        <h2>Form Pemesanan WiFi Baru</h2>
+        <form id="formPesan">
+
+            <label>Nama Lengkap</label>
+            <input type="text" id="nama">
+
+            <label>Alamat Pemasangan</label>
+            <textarea id="alamat"></textarea>
+
+            <label>Pilih Paket</label>
+            <select id="paketSelect">
+                <option value="135000"> Bronze - Rp 135.000</option>
+                <option value="500000"> Silver - Rp 500.000</option>
+                <option value="995000"> Gold - Rp 995.000</option>
+            </select>
+
+            <button type="button" onclick="hitungTotal()">
+                Hitung Total Harga
+            </button>
+
+            <div id="totalBiaya">
+                Total Biaya: -
+            </div>
+
+            <button type="submit">
+                Kirim Pesanan
+            </button>
+
+        </form>
+    </div>
+
+
+    <div class="promo-container">
+        <div class="promo-image">
+            <img src="promo-person.png">
+        </div>
+
+        <div class="promo-content">
+            <h3>Promo Bulan Ini</h3>
+            <h4>Diskon Instalasi 50%</h4>
+            <p>
+                Daftar sekarang dan nikmati
+                pemasangan lebih hemat.
+            </p>
+            <ul>
+                <li>Gratis Survey</li>
+                <li>Gratis Konsultasi</li>
+                <li>Pemasangan Cepat</li>
+            </ul>
+        </div>
+    </div>
+
+</section>
+
+
+<section class="list-pesanan" id="daftar">
+    <h2>Daftar Pesanan Pelanggan</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>No</th>
+                <th>Nama</th>
+                <th>Alamat</th>
+                <th>Paket</th>
+            </tr>
+        </thead>
+
+        <tbody id="listPesanan">
+
+        </tbody>
+    </table>
+</section>
+
+
+<footer>
+    <p>© 2026 TKJ-Net</p>
+    <p>Kontak: 0857-4840-1549 & Email: @tkjnet.com</p>
+    <p>Kantor: Jl. Jamsaren Gg. II No. 38, Desa Jamsaren, Kecamatan Pesantren, Kota Kediri, Jawa Timur, Indonesia</p>
+         
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
